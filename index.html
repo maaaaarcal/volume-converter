@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="res/style.css">
+    <script src="res/script.js" defer></script>
+    <title>Volume Converter by Marc Alburo</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1><span class="yellow">v</span>olume <span class="yellow">c</span>onverter</h1>
+        </br> 
+        <div class="converter">
+            <div id="unit1" class="input-group">
+                <div class="table">
+                    <div class="input-contain">
+                        <input type="number" value="0" maxlength="12" id="input1" onfocus="clearInput('input1');convert('input1', 'unitDrop1', 'input2', 'unitDrop2');" onblur="getLastIn('input1', 'input2')" onkeyup="convert('input1', 'unitDrop1', 'input2', 'unitDrop2');">
+                        <span class="unit inact-lab" id="unitLabel1">mL</span>
+                    </div>
+                </div>
+                <select class="unit-drop inact-sel" id="unitDrop1" onfocus="getLastSel('unitDrop2', 'unitDrop1')" onchange="dropdownToLabel('unitLabel1', 'unitDrop1', 'input1', 'unitDrop1', 'input2', 'unitDrop2');">
+                    <option value="0" selected>milliliter</option>
+                    <option value="1">liter</option>
+                    <option value="2">cup</option>
+                    <option value="3">fluid ounce</option>
+                </select>
+            </div>
+            <div id="unit2" class="input-group">
+                <div class="table">
+                    <div class="input-contain">
+                        <input type="number" value="0" maxlength="12" id="input2" onfocus="clearInput('input2');convert('input2', 'unitDrop2', 'input1', 'unitDrop1');" onblur="getLastIn('input2', 'input1')" onkeyup="convert('input2', 'unitDrop2', 'input1', 'unitDrop1');">
+                        <span class="unit inact-lab" id="unitLabel2">L</span>
+                    </div>
+                </div>
+                <select class="unit-drop inact-sel" id="unitDrop2" onfocus="getLastSel('unitDrop1', 'unitDrop2')" onchange="dropdownToLabel('unitLabel2', 'unitDrop2', 'input2', 'unitDrop2', 'input1', 'unitDrop1');">
+                    <option value="0">milliliter</option>
+                    <option value="1" selected>liter</option>
+                    <option value="2">cup</option>
+                    <option value="3">fluid ounce</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <p>Created by <span>Marc Alburo</span></p>
+</body>
+</html>

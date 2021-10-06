@@ -1,0 +1,119 @@
+@font-face {
+    font-family: montserratB;
+    src: url(../assets/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: montserratM;
+    src: url(../assets/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: montserratLt;
+    src: url(../assets/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: halogen;
+    src: url(../assets/HalogenbyPixelSurplus-Regular.otf);
+}
+
+@font-face {
+    font-family: nidus;
+    src: url(../assets/nidsans-webfont.ttf);
+}
+
+body {
+    background-color: #d6d7d9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: halogen;
+    color: #2c2c2c;
+    letter-spacing: 0.08em;
+}
+
+.yellow {
+    color: #d5a80a;
+}
+
+.wrap {
+    width: 45em;
+    max-width: 45em;
+    margin: 0 auto;
+    border: none;
+    padding: 0 1em 3em 1em;
+    margin-top: 7em;
+}
+
+.converter {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 37em;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-contain {
+    margin: 0 auto;
+    border: none;
+    height: auto;
+    width: 17em;
+    max-width: 17em;
+    display: table;
+    vertical-align: bottom;
+}
+  
+.input-contain input {
+    display: table-column;
+    border: none;
+    border-bottom: 3px solid #2c2c2c;
+    height: 1.5em;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d5a80a;
+    font-family: nidus;
+    font-size: 1.5em;
+    padding-left: 0.3em;
+    background-color: transparent;
+}
+
+.input-contain input:focus {
+    outline: none;
+}
+
+.input-contain .unit {
+    font-family: montserratB;
+    color: #2c2c2c;
+    font-size: large;
+    margin-left: 0.3em;
+}
+
+.unit-drop {
+    font-family: montserratM;
+    font-size: 1em;
+    margin-top: 0.5em;
+    height: auto;
+    width: 8em;
+    background-color: transparent;
+    border: 0.15em solid #2c2c2c;
+    color: #2c2c2c;
+}
+
+p {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: montserratLt;
+    color: #2c2c2c;
+}
+
+p span {
+    font-family: montserratB;
+}
